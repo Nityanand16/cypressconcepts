@@ -10,9 +10,12 @@
   "author": "Nityanand Gupta",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^6.2.1"
+    "cypress": "^6.2.1",
+    "cypress-wait-until": "^1.7.1"
   },
   "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
     "npx": "^10.2.2"
   }
 }
