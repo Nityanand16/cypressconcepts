@@ -25,3 +25,19 @@ import 'cypress-wait-until';
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+import 'cypress-file-upload';
+
+Cypress.Commands.add("login",(id,password)=>{
+    cy.visit('/')
+    cy.get('.form-control').type(id)
+    cy.get('.btn-blue').click()
+    cy.get('input[formcontrolname="password"]').type(password)
+
+})
+
+
+Cypress.Commands.add("logout",()=>{
+cy.visit('/')
+cy.get('.icon-logout').click()
+})
