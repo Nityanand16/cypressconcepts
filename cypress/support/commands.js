@@ -28,6 +28,8 @@ import 'cypress-wait-until';
 
 import 'cypress-file-upload';
 
+import 'cypress-wait-until';
+
 Cypress.Commands.add("login",(id,password)=>{
     cy.visit('/')
     cy.get('.form-control').type(id)
